@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-left .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .navbar-center .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-bar input {
+    width: 450px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  .search-bar button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px; 
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+   
+
+  }
+  
+  .nav-links li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-links li:nth-child(1)::after, 
+  .nav-links li:nth-child(2)::after,
+  .nav-links li:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    height: 30px; 
+    width: 2px; 
+    background-color: #ddd; 
+    
+  }
+  
+
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    
+  }
+  
+  .nav-links li img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .navbar-bottom {
+    background-color: #f8f8f8;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .categories li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .categories li a:hover {
+    color: #007bff;
+  }
+  
